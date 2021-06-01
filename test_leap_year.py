@@ -9,6 +9,10 @@ class Tester(unittest.TestCase):
   # Test that 1900 is not recognzied as a leap year.
   def test_div_by_100(self):
     self.assertFalse(leap_year.calc(1900))
+  
+  # Test that 2000 is recognized as a leap year.
+  def test_div_by_400(self):
+    self.assertTrue(leap_year.calc(2000))
 
 if __name__ == '__main__':
   unittest.main()
