@@ -1,2 +1,5 @@
 def calc(n):
-  return str(n)
+  if (n % 3) == 0:
+    return "Fizz"
+  else:
+    return str(n)
