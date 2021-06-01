@@ -11,6 +11,9 @@ class Tester(unittest.TestCase):
   # Test if Buzz is returned for a number that is a multiple of 5.
   def test_buzz(self):
     self.assertEqual(fizzbuzz.calc(10), "Buzz")
+  # Test if FizzBuzz is returned for a number that is a multiple of 3 and 5.
+  def test_fizzbuzz(self):
+    self.assertEqual(fizzbuzz.calc(15), "FizzBuzz")
 
 if __name__ == '__main__':
   unittest.main()
